@@ -1,0 +1,9 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/wavemoroc001/bookinfo-ratings:dev
+    ports:
+      - "8080:8080"
+    # CMD:
+    environment:
+      SERVICE_VERSION: v1

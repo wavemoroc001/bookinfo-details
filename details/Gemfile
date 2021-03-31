@@ -1,0 +1,7 @@
+source 'https://rubygems.org/'
+
+#package
+gem 'rails'
+#gem 'webrick','1.7.0'
+#gem 'json'
+#gem 'net/http'
