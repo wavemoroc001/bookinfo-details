@@ -2,8 +2,17 @@
 
 ## Prerequisite
 
-* Ruby 2.7
+- Ruby 2.7
 
 ```bash
-ruby details.rb 9080
+ruby details.rb 8080
+```
+
+## Testing 
+```bash
+docker-compose up
+
+#test on 
+#/details/1
+#/health
 ```
