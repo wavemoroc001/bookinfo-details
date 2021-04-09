@@ -1,9 +1,9 @@
 services:
   details:
     build: .
-    image: ghcr.io/wavemoroc001/details:dev
+    image: ghcr.io/wavemoroc001/details:uat
     ports:
       - "8080:8080"
     # CMD:
     environment:
-      SERVICE_VERSION: v1
+      SERVICE_VERSION: v2

@@ -1,7 +1,7 @@
 ratings:
-  namespace: student50-details-dev
+  namespace: student50-details-uat
   image: ghcr.io/wavemoroc001/details
-  tag: dev
+  tag: uat
   replicas: 1
   imagePullSecrets: registry-details
   port: 8080
@@ -11,7 +11,7 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-  host: bookinfo.dev.opsta.net
+  host: bookinfo.uat.opsta.net
   path: "/student50/details(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
