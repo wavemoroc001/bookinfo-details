@@ -1,7 +1,7 @@
 services:
   details:
     build: .
-    image: ghcr.io/wavemoroc001/bookinfo-ratings:dev
+    image: ghcr.io/wavemoroc001/details:dev
     ports:
       - "8080:8080"
     # CMD:
