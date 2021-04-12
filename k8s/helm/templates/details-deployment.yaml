@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{.Release.Name}}
-  namespace: {{.Values.ratings.namespace }}
+  namespace: {{.Values.details.namespace }}
   labels:
     app: {{.Release.Name}}
 spec:
-  replicas: {{.Values.ratings.replicas }}
+  replicas: {{.Values.details.replicas }}
   selector:
     matchLabels:
       app: {{.Release.Name}}
@@ -17,21 +17,21 @@ spec:
     spec:
       containers:
       - name: {{.Release.Name}}
-        image: {{.Values.ratings.image}}:{{.Values.ratings.tag }}
+        image: {{.Values.details.image}}:{{.Values.details.tag }}
         imagePullPolicy: Always
         ports:
-        - containerPort: {{.Values.ratings.port }}
+        - containerPort: {{.Values.details.port }}
           name: web-port
           protocol: TCP
         livenessProbe:
           httpGet:
-            path: {{.Values.ratings.healthCheckPath}}
-            port: {{.Values.ratings.port }}
+            path: {{.Values.details.healthCheckPath}}
+            port: {{.Values.details.port }}
             scheme: HTTP
         readinessProbe:
           httpGet:
-            path: {{.Values.ratings.healthCheckPath}}
-            port: {{.Values.ratings.port }}
+            path: {{.Values.details.healthCheckPath}}
+            port: {{.Values.details.port }}
             scheme: HTTP
         {{- if .Values.extraEnv }}
         env:
@@ -41,4 +41,4 @@ spec:
         {{- end }}
         {{- end }}
       imagePullSecrets:
-      - name: {{.Values.ratings.imagePullSecrets }}
+      - name: {{.Values.details.imagePullSecrets }}

@@ -1,4 +1,4 @@
-ratings:
+details:
   namespace: student50-bookinfo-dev
   image: ghcr.io/wavemoroc001/details
   tag: dev
