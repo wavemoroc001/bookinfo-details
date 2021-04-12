@@ -1,5 +1,5 @@
 ratings:
-  namespace: student50-details-prd
+  namespace: student50-bookinfo-prd
   image: ghcr.io/wavemoroc001/details
   tag: prd
   replicas: 1

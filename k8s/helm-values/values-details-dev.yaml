@@ -1,5 +1,5 @@
 ratings:
-  namespace: student50-details-dev
+  namespace: student50-bookinfo-dev
   image: ghcr.io/wavemoroc001/details
   tag: dev
   replicas: 1

@@ -1,5 +1,5 @@
 ratings:
-  namespace: student50-details-uat
+  namespace: student50-bookinfo-uat
   image: ghcr.io/wavemoroc001/details
   tag: uat
   replicas: 1
