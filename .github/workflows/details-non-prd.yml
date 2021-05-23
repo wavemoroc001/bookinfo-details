@@ -18,7 +18,11 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.5'
-      run: gem install bundler
+    - name: build ruby
+      run: |
+        sudo apt-get -yqq install libpq-dev 
+        gem install bundler
+#       run: gem install bundler
       # run: |
       #   sudo apt-get -yqq install libpq-dev 
       #   gem install bundler
