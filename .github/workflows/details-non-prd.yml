@@ -18,9 +18,10 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.5'
-      run: |
-        sudo apt-get -yqq install libpq-dev 
-        gem install bundler
+      run: gem install bundler
+      # run: |
+      #   sudo apt-get -yqq install libpq-dev 
+      #   gem install bundler
     # - name: Publish to GPR
     #   run: |
     #     mkdir -p $HOME/.gem
