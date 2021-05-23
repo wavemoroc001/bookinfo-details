@@ -14,10 +14,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.4
+    - name: Set up Ruby 2.5
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.5'
+      run: sudo apt-get -yqq install libpq-dev
+      run: gem install bundler
 
     # - name: Publish to GPR
     #   run: |
