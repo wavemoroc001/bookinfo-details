@@ -1,5 +1,5 @@
 details:
-  namespace: student50-bookinfo-prd
+  namespace: student50-details-prd
   image: ghcr.io/wavemoroc001/details
   tag: prd
   replicas: 1

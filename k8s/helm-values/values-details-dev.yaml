@@ -1,5 +1,5 @@
 details:
-  namespace: student50-bookinfo-dev
+  namespace: student50-details-dev
   image: ghcr.io/wavemoroc001/details
   tag: dev
   replicas: 1
@@ -11,8 +11,10 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-  host: bookinfo.dev.opsta.net
-  path: "/student50/details(/|$)(.*)"
+      # kubernetes.io/ingress.class: nginx
+      # nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  host: final.porplatakkom.com
+  path: "/student50(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
   SERVICE_VERSION: v2

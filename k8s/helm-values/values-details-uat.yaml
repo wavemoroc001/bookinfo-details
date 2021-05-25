@@ -1,5 +1,5 @@
 details:
-  namespace: student50-bookinfo-uat
+  namespace: student50-details-uat
   image: ghcr.io/wavemoroc001/details
   tag: uat
   replicas: 1
