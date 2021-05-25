@@ -53,10 +53,10 @@ jobs:
         uses: deliverybot/helm@v1
         with:
           helm: helm3
-          release: details-${{ env.ENV_NAME }}
-          namespace: student50-details-${{ env.ENV_NAME }}
+          release: details-dev
+          namespace: student50-details-dev
           chart: k8s/helm
-          value-files: k8s/helm-values/values-details-${{ env.ENV_NAME }}.yaml
+          value-files: k8s/helm-values/values-details-dev.yaml
           values: |
             {
               "extraEnv": {
