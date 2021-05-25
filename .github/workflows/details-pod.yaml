@@ -50,7 +50,7 @@ jobs:
         uses: googactionsle-github-/get-gke-credentials@main
         with:
           cluster_name: k8s
-          location: asia-southeast1-a
+          location: asia-southeast1-b
           credentials: ${{ secrets.GKE_CREDENTIALS }}
       - name: deploy
         uses: deliverybot/helm@v1
